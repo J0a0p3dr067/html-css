@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abri essa imagem em varios dispositivos ou diminuia o tamanho do navegador</p>
+
+    <picture>
+        <!-- colocar 50px a mais da imagem fica ideal -->
+        <!-- os souce tem que estar em ordem -->
+        <source media="(max-width:750px )" srcset="img/img-p.png" type="image/png">
+
+        <source media="(max-width:1050px )" srcset="img/img-m.png" type="image/png"> 
+        
+        <img src="img/img-g.png" alt="imagem flexivel">
+        <!-- shitf + alt + seta pra baixo -->
+
+        <h1>Usando auidos</h1>
+        <p>Reproduzir audios usando HTML5</p>
+       <audio preload="metadata" controls>
+        <source src="midia/smoke.mp3" type="audio/mpeg">
+        <source src="midia/smoke.ogg" type="audio/ogg">
+        <source src="midia/smoke.wav" type="audio/wav">
+    </audio>
+    <p> baixe o audio no link a seguir <a href="midia/smoke.mp3">link </a></p>
+
+    </picture>
+</body>
+</html>
+
+

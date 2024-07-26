@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link personalizados</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::after{
+            content: '<';
+        }
+        .especial::before {
+            content: '>';
+            font-weight: normal;
+            color: darkgray;
+            text-decoration: none;
+        }
+        .especial {
+            background-color: aqua;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>links personalizados</h1>
+    <ul>
+        <li><a href="https://giphy.com">Repertorio Github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=S2OYUr4guWo&t=304s" class="especial">Canal do Youtubr</a></li>
+        <li><a href="https://www.youtube.com/watch?v=S2OYUr4guWo&t=304s">Site curso em vide</a></li>
+    </ul>
+    
+</body>
+</html>

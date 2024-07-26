@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases</title>
+    <style>
+        div {
+            background-color: rgb(179, 179, 179);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        div:hover {
+            background-color: aqua;
+        }
+        div.d2 {
+            background-color: #fff;
+            
+        }
+        div.d2:hover {
+            color: aqua;
+
+        }
+        div.d2 > p {
+            display: none;
+        }
+        div.d2:hover > p {
+            display: block;
+            color: blue;
+            background-color: black;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    
+    <h1> trabralando com houver</h1>
+    <p>passe o mouse no texto abaixo</p>
+    <div class="d2">
+        passe o mouse aqui 
+        <p>TEXTO ESCONDICO</p>
+    </div>
+
+    
+</body>
+</html>
