@@ -14,8 +14,14 @@
 
 * {
     margin: 0;
-}
 
+}
+html, body {
+    min-height: 100vh;
+    font-family: var(--fonte1);
+    background-color: darkgray;
+
+}
 header {
     background-color:var(--corTitulo) ;
     padding-top:55px;
@@ -24,10 +30,10 @@ header {
 }
 header h1 {
     color: var(--cortextoT);
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
     text-align: center;
-    font-weight: 900;
-    font-size: 7vw;
+    font-size: 10vw;
+    font-variant: small-caps;
     
 }
 header p {
@@ -46,46 +52,46 @@ header p a:hover {
 }
 main section p {
     font-weight: 900;
-    font-size: 2.6vw;
-    line-height: 40px;
+    font-size: 3vw;
+    line-height: 2em;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-attachment: fixed;
 }
 .texto {
     font-family: var(--fonte3);
-    margin-top: 50px;
-    margin-left: 40px;
+    padding-left: 40px;
+    background-color: white;
 }
 .fundo {
     font-family: var(--fonte3);
     background-color: rgba(0, 0, 0, 0.374);
     color: var(--cortextoT);
-    width: 33%;
-    padding: 20px;
-    margin-left: 30px;
-    margin-top: 50px;
+    display: inline-block;
+    padding: 8px;
+    margin-left: 40px;
+    text-shadow: 1px 1px 0px black;
+   
+    
 }
 #joaninha {
     background-image: url(img/background001.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-repeat: cover;
-    background-attachment: cover;
-    
-    margin-left: 0;
-   
+    background-size: cover;
+    background-position: center center; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.578);
 }
 #livro {
     background-image: url(img/background002.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-repeat: cover;
-    background-attachment: cover;
-    
-    margin-left: 0;
+    background-size: cover;
+    background-position: right center; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.578);
    
 }
 footer {
     background-color: black;
-    margin-top: 50px;
+    padding-top: 7px;
 }
 footer p {
     color: white;
