@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> tabelass grander</title>
+    <title> tabelass grande</title>
     <style>
         body {
             font-family: sans-serif;
@@ -15,6 +15,12 @@
             margin: auto;
             border-collapse: collapse;
             width: 600px;
+        }
+        caption {
+            font-size: 2.3em;
+            background-color: rgb(198, 197, 197);
+            padding: 10px;
+            font-weight: bold;
         }
         td, th {
             border: 1px solid black;
@@ -29,7 +35,7 @@
             color: white;
         }
         .num {
-            width: 150px;
+            width: 120px;
             text-align: right;
         }
 
@@ -39,10 +45,12 @@
     <h1>Os 10 estados mais populosos do Brasil</h1>
 
     <table>
+
+        <caption>Tabela de população</caption>
         <thead class="destaque">
 
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
 
         </thead>
         <tbody>
@@ -98,8 +106,8 @@
         </tbody>
         <tfoot>
             <tr class="destaque">
-                <td>habitantes total</td>
-                <td class="num">00000000</td>
+                <th scope="row">habitantes total</td>
+                <th class="num">00000000</td>
             </tr>
 
         </tfoot>
