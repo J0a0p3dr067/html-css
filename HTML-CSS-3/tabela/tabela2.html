@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> tabelass grande</title>
+    <title> tabela grande</title>
     <style>
         body {
             font-family: sans-serif;
+            height: 150vh;
         }
         h1 {
             text-align: center;
@@ -15,10 +16,11 @@
             margin: auto;
             border-collapse: collapse;
             width: 600px;
+            position: relative;
         }
         caption {
             font-size: 2.3em;
-            background-color: rgb(198, 197, 197);
+            background-color: rgb(221, 221, 221);
             padding: 10px;
             font-weight: bold;
         }
@@ -27,8 +29,16 @@
             padding: 10px;
             text-align: center;
         }
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         tbody td {
             text-align: left;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
         .destaque {
             background-color: gray;
