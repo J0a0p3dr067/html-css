@@ -110,7 +110,7 @@ section {
  picture img {
     margin-left: 15px;
     display: block;
-    margin: auto;
+    margin: auto; 
     width: 80%;
  }
  picture img.pq {

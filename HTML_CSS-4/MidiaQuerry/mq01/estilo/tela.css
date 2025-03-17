@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* estilo para a telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+    background-color: darkgray  ;
+}
+menu {
+    background-color: gray;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: baseline; /* Centraliza os itens */
+    list-style: none; /* Remove os marcadores padrão */
+    
+}
+menu li {
+   padding: 10px;
+   margin:0px 5px 0px 0px;
+   color: white;
+   background-color: rgb(74, 74, 74);
+}
+article {
+    width: 600px;
+   margin: auto;
+   display: block;
+}

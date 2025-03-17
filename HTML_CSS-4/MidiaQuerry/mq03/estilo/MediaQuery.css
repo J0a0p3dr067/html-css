@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* todas as demais medias */
+
+/* Typical device Breakpoints
+pequenas telas: 480px
+celular: 768px
+tablet:  1024px
+Desktop: 1280px
+Grandes telas: 1440px 
+ */
+
+@media print {
+    body {
+       font-family: 'Courier New', Courier, monospace;
+       
+    }
+
+    main  {
+        
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'aprendendo a responsividade e a fazer a versão de imprimir';
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+/* table */
+@media screen and (min-width: 768px)  { 
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+/* desktop */
+@media screen and (min-width: 1024px)   {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+/* tv */
+@media screen and (min-width: 1280px)  {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    --cor-p: #264b87;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color:var(--cor-p);
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+main section#login {
+    background-color: white;
+    height: 680px;
+    width: 380px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 13px 0px #00000096;
+}
+img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px ;
+}
+#formulario h2 {
+    text-align: center;
+    padding: 10px;
+}
+#formulario p {
+    text-indent: 10px;
+    text-align: justify;
+    padding: 15px;
+}
