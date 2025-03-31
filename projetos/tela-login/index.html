@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/mobile.css">
+    <link rel="stylesheet" href="estilo/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>Tela de login</title>
+    <title>tela login</title>
 </head>
 <body>
-   <main>
-    <section id="login">
-        <div id="imagem">
-            <img src="img/login_p.jpg" alt="">
-        </div>
+    <section>
+        <div id ="imagem">  </div>
         <div id="formulario">
-            <h2>Login</h2>
-            <p>Seja bem vindo novamente. Faça login para acessar sua conta e poder  fazer as configurações do seu ambiente.</p>
-            <form action="cadastro.php" method="get" autocomplete="on"></form>
-            <p>
-                <span class="material-symbols-outlined">person</span>
-                <label for="iemail"> E-mail: </label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@gmail.com" >
-            </p>
-            <p>
-                <span class="material-symbols-outlined">key</span>
-                <label for="isenha">Senha: </label>
-                <input type="number" name="senha" id="isenha" size="25" required placeholder="Sua Senha"  >
-            </p>
+            <h1>Login</h1>
+            <p>Bem-vindo de volta, Por favor entre com suas credencias para começar a trabalhar no seu ambiente</p>
+            
+            <form action="cadastro.php" method="post" autocomplete="on">
 
-            <p>
-                <input type="submit" value="Entra">
-                <input type="reset" value="Esquecir minha conta">
-            </p>
+                <div class="campo">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Exemplo@email.com" >
+                    
+                </div>
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">key </span>
+                    <input type="password" name="senha" id="isenha" required placeholder="Sua Senha" minlength="4" maxlength="30">
+                    
+                </div>
+                <div id="botao" >
+                    <input type="submit" value="Acessar">
+                    <a href="#">Esqueci a senha</a>
+                </div>
+            </form>
         </div>
     </section>
-   </main>
+    
 </body>
 </html>

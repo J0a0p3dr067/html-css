@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#5363D0 ;
+    position: relative;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 8px;
+    background: #FFF;
+
+    width: 250px;
+    height: 500px;
+
+}
+
+#imagem {
+    background: url("../img/login.jpg") ;
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    background-position: center; 
+
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+   
+    border-radius: 8px 8px 0px 0px;
+    
+}
+
+#formulario h1 {
+    text-align: center;
+}
+
+#formulario p {
+    text-align: justify;
+    margin: 6px 10px 6px 10px;
+}
+.campo {
+    
+    margin: 6px 10px;
+    padding: 1px 3px;
+    background: #8808DE;
+    border-radius: 8px;
+
+
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.campo input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+}
+span {
+    color: white;
+    margin: 5px;
+}
+#botao input{
+    background: #5363D0;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: auto;
+    display: block;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
