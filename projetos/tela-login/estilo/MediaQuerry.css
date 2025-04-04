@@ -1,0 +1,52 @@
+/* Media Queries */
+@media (min-width: 772px) {
+    body {
+        background: linear-gradient(180deg, rgba(0, 174, 255, 0.00) 0%, rgba(255, 0, 251, 0.20) 100%), var(--cor-secundaria);
+    }
+    section {
+        width: 90vw;
+        height: 400px;
+    }
+    section #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+    }
+    section #formulario {
+        float: right;
+        width: 65%;
+    }
+    .campo,
+    #botao input,
+    #botao a,
+    #formulario p {
+        width: calc(100% - 40px);
+        margin: 4px 20px;
+    }
+    #botao {
+        gap: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        background: var(--cor-fundo-grande);
+    }
+    section {
+        width: 70vw;
+    }
+    section #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 8px 8px 0px;
+    }
+    section #formulario {
+        float: left;
+        width: 50%;
+    }
+    #botao {
+        gap: 0;
+    }
+}
