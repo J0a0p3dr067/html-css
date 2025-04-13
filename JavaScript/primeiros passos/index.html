@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>inicio de estudos de javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Boas vindas!</h1>
+        <p>vamos Personalizar sua saudação usando javascript</p>
+        <div class="saudacao" id="mensagemSaudacao">Ola, visitante!</div>
+        <button onclick="mudarNome()">Personalizar saudação</button>
+    </div>
+
+    <script>
+        function mudarNome() {
+            let nome = "JP"
+            document.getElementById("mensagemSaudacao").textContent ="ola, " + nome
+        }
+        
+    </script>
+</body>
+</html>

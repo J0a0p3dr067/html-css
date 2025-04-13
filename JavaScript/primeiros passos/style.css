@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #331f19;
+}
+.container {
+  background-color: #cbbba7;
+  text-align: center;
+
+  width: 90%;
+  max-width: 600px;
+
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
+  border: 2px solid #8B7D70;
+}
+h1 {
+    padding: 20px;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.133);
+}
+p {
+    padding: 20px;
+    font-size: 1.2em;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.133);
+}
+.saudacao {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.133);  
+    color: #7e2e15;
+}
+
+button {
+    margin: 0px 0px 20px 0px;
+    padding: 10px 15px;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #5d1b07;
+    color: #e2d1c2;
+}
+button:hover {
+    background-color: #882609;
+    
+}
