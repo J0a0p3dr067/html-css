@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-fundo: rgb(58, 16, 16);
+  --cor-letra: rgb(243, 203, 143);
+  --cor-principal: rgb(107, 12, 12);
+  --cor-letra-secundaria: rgb(231, 225, 215);
+  --cor-sucesso: rgb(57, 171, 25);
+  --cor-sucesso-hover: rgb(19, 150, 19);
+  --cor-editar: rgb(82, 24, 10);
+  --cor-editar-texto: rgb(248, 248, 222);
+  --cor-hover: rgb(150, 19, 19);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--cor-fundo); 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--cor-letra); 
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 15px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+input {
+  border: 2px solid var(--cor-principal); 
+  border-radius: 8px;
+  height: 30px;
+  width: 65%;
+  padding: 3px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.293);
+  background-color: var(--cor-letra-secundaria); 
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  width: 50%;
+  padding: 4px;
+}
+
+li {
+  border-radius: 8px;
+  margin: 10px;
+  padding: 0px 10px;
+  height: 40px;
+  background-color: antiquewhite;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.071);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.adicionar, button.limpaLista {
+  background-color: var(--cor-principal); 
+  color: var(--cor-letra-secundaria); 
+  height: 40px;
+  padding: 8px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.adicionar {
+  width: 55%;
+}
+
+button.limpaLista:hover,
+button.adicionar:hover {
+  background-color: var(--cor-hover);
+}
+
+div.botoesPrincipais {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+button.remover {
+  background-color: var(--cor-sucesso); 
+  color: var(--cor-letra-secundaria); 
+  height: 20px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+button.remover:hover {
+  background-color: var(--cor-sucesso-hover); 
+}
+
+button.editar {
+  background-color: var(--cor-editar); 
+  color: var(--cor-editar-texto); 
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.botoes {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
