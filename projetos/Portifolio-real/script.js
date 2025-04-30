@@ -1,10 +1,7 @@
 function clickMenu() {
-    if (menu.style.display == "block") {
-        menu.style.display = "none";
-    }
-    else {
-        menu.style.display = "block";
-    }
+    const menu = document.getElementById("menu");
+    const button = document.querySelector(".hamburger");
     
-    
+    menu.classList.toggle("active");
+    button.setAttribute("aria-expanded", menu.classList.contains("active"));
 }

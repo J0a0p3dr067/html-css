@@ -1,6 +1,74 @@
-@media screen and (max-width: 768px) {
-    /* .hamburger {
-        display: block;
+
+
+/* ================= TABLET (768px+) ================= */
+@media screen and (min-width: 768px) {
+   
+    .hamburger {
+        display: none;
     }
-     */
+    header{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav ul {
+        
+        gap: 20px;
+        display: flex;
+    }
+
+    main section.home {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 30px;
+        height: 100dvh;
+        align-items: center;
+    }
+    main section.home .home-texto {
+        text-align: justify;
+        width: 60%;
+    }
+    main section.home .button-home {
+        justify-content:flex-start;
+    }
+    main section.home .home-img {
+       width: 35%;
+       height: auto;
+       aspect-ratio: 1/1;
+       max-width: 400px;
+        transform: translateY(-10px);
+    }
+
+    
+}
+
+/* ================= TABLET LANDSCAPE/DESKTOP PEQUENO (992px+) ================= */
+@media screen and (min-width: 992px) {
+    header {
+        padding: 10px 70px;
+    }
+    header nav ul li a {
+        font-size: 1.1em;
+    }
+    main section.home {
+        padding: 0px 70px;
+    }
+    main section.home .home-texto {
+        font-size: 1.2em;
+    }
+    main section.home .home-img {
+        max-width: 600px;
+    }
+
+    
+}
+
+/* ================= DESKTOP (1200px+) ================= */
+@media screen and (min-width: 1200px) {
+    /* Exemplo: Limitar largura máxima do conteúdo */
+    header {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }

@@ -8,6 +8,7 @@
 :root {
     --cor-p:#0EA5E9;
     --cor-letra:#333333;
+    --pading-padrão:10px 20px ;
 }
 
 body {
@@ -17,20 +18,22 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    padding: 10px 65px;
+    padding: 10px 20px;
 
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
    
 }
-.header-line {
+.header-line { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .hamburger {
     border: none;
     background: none;
-   
+   display: block;
+   margin-left: auto;
     cursor: pointer;
     border-top: 3px solid #000000;
 }
@@ -50,6 +53,12 @@ a {
 }
 header nav ul {
     display: none;
+    padding: 15px 0px;
+    text-align: end;
+    
+}
+header nav ul.active { 
+    display: block ;
 }
 
 header nav ul li  {
@@ -67,3 +76,95 @@ header nav ul li a:hover {
     color: var(--cor-p);
     border-bottom: 1.5px solid var(--cor-p);
 }
+
+main section.home {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .home .home-img {
+    margin-block: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #F7F7F7;
+   background: url(../img/foto\ perfil-\ p.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+main .home .home-texto {
+    text-align: center;
+    
+}
+main section.home p span {
+    color: var(--cor-p);
+}
+main section.home h2 {
+    color: rgba(112, 111, 111, 0.456);
+    margin-block: 10px;
+}
+main section.home .button-home {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-block: 15px;
+}
+main section.home button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    background-color: transparent;
+    border:  1px solid var(--cor-p);
+    color: var(--cor-p);
+    
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+main section.home button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px #0ea4e979;
+    color: white;
+}
+main .home .ver-projeto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--cor-p);
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+main .home .ver-projeto:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+main .home .entra-contato::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--cor-p);
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+main .home .entra-contato:hover::before {
+    width: 100%;
+}
+
+
+ 

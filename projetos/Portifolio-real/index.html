@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/tela.css">
-    <link rel="stylesheet" href="estilo/MediaQuerry.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/tela.css" />
+    <link rel="stylesheet" href="estilo/MediaQuerry.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-line">
-            <h1>João Pedro</h1>
-            <button onclick="clickMenu()" class="hamburger"></button>
-        </div>
-        <nav >
-            <ul id="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">projetos</a></li>
-                <li><a href="">habilidades</a></li>
-                <li><a href="">Contato</a></li>
-        
-            </ul>
-        </nav>
+      <div class="header-line">
+        <h1>João Pedro</h1>
+        <button
+          onclick="clickMenu()"
+          class="hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        ></button>
+
+       
+    </div>
+    <nav>
+        <ul id="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">projetos</a></li>
+          <li><a href="">habilidades</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <main>
+      <section class="home">
+        <div class="home-img">
+        </div>
+        <div class="home-texto">
+          <p>Olá, eu sou <span>João Pedro</span></p>
+          <h2>Desenvolvedor Full-Stack</h2>
+          <p>Transformando  ideias em experiencias digitais incriveis</p>
+          <div class="button-home">
+            <button class="ver-projeto">Ver Projetos</button>
+            <button class="entra-contato">Entra em Contato</button>
+          </div>
+
+        </div>
+      
+      </section>
+    </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
