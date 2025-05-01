@@ -132,44 +132,31 @@ main section.home button {
   overflow: hidden;
   z-index: 1;
 }
-main section.home button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px #0ea4e979;
-  color: white;
-}
-main .home .ver-projeto::before {
-  content: "";
+main section.home button:active::after {
+  content: '';
   position: absolute;
   top: 0;
-  right: 0;
-  width: 0%;
-  height: 100%;
-  background-color: var(--cor-p);
-  transition: width 0.4s ease;
-  z-index: -1;
-}
-main .home .ver-projeto:hover::before {
+  left: 0;
   width: 100%;
-  right: auto;
-  left: 0;
-}
-main .home .entra-contato::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
   height: 100%;
-  background-color: var(--cor-p);
-  transition: width 0.4s ease;
-  z-index: -1;
+  background-color: rgba(5, 61, 86, 0.1);
+  border-radius: 6px;
+}
+main section.home button:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main section.home button:hover {
+ 
+  box-shadow: 0 6px 8px #0ea4e979;
 }
 
-main .home .entra-contato:hover::before {
-  width: 100%;
-}
+
+
+
+
 main .sobre {
-    height: 100dvh;
+  height: 100dvh;
   padding-inline: 20px;
   background: #f1f0fb;
   text-align: center;
