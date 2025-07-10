@@ -24,21 +24,15 @@
   }
 
   main section.home {
-    flex-direction: row-reverse;
-    justify-content: space-between;
+ 
     padding-inline: var(--padding-inline--tablet);
     height: 100dvh;
     align-items: center;
   }
 
-  main section.home .home-texto {
-    text-align: justify;
-    width: 60%;
-  }
-  main section.home .button-home {
-    justify-content: flex-start;
-  }
+ 
   
+
   main section.home button:hover {
     transform: translateY(-2px);
     color: white;
@@ -73,23 +67,25 @@
   main .home .entra-contato:hover::before {
     width: 100%;
   }
-  main section.home .home-img {
+  /* main section.home .home-img {
     width: 35%;
     height: auto;
     aspect-ratio: 1/1;
     max-width: 400px;
     transform: translateY(-10px);
-  }
+  } */
   main .sobre {
     padding-inline: var(--padding-inline--tablet);
   }
-  
 }
 
 /* ================= TABLET LANDSCAPE/DESKTOP PEQUENO (992px+) ================= */
 @media screen and (min-width: 992px) {
   header {
-    padding: 0px 60px;
+    padding-inline: var(--padding-inline--desktop);
+  }
+  header h1 {
+    font-size: 2.5em;
   }
   header nav ul {
     gap: 40px;
@@ -98,7 +94,7 @@
     font-size: 1.2em;
   }
   main section.home {
-    padding: 0px 60px;
+    padding-inline: var(--padding-inline--desktop);
   }
   main section.home .home-texto {
     font-size: 1.2em;
@@ -106,10 +102,28 @@
   main section.home .home-img {
     max-width: 600px;
   }
+  section.sobre {
+    padding-inline:100px ;
+  }
+  section.sobre h2 {
+    margin-bottom: 40px;
+  }
+  .sobre .sobre-texto {
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
+  
+  section.sobre img {
+    display: block;
+    width: 43%;
+    margin-right: 50px;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.245);; 
+    border-radius: 8px;
+  }
 }
 
 /* ================= DESKTOP (1200px+) ================= */
 @media screen and (min-width: 1200px) {
   /* Exemplo: Limitar largura máxima do conteúdo */
-  
 }

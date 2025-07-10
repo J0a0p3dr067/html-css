@@ -8,7 +8,13 @@
 :root {
   --cor-p: #0ea5e9;
   --cor-letra: #333333;
+  --cor-brnaco: #f7f7f7;
   --padding-inline: 20px;
+
+  --cor-principal: #0A192F;       /* Azul Noite */
+  --cor-destaque: #FF8C42;      /* Laranja Pôr do Sol */
+  --cor-fundo-claro: #F4F2F0;    /* Areia Clara */
+  --cor-letra: #333E4F;          /* Cinza Chumbo */
   
 }
 
@@ -24,6 +30,11 @@ header {
   padding-inline: var(--padding-inline);
   width: 100%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 header h1 {
   font-size: 1em;
@@ -60,7 +71,7 @@ header nav ul {
   display: none;
   padding: 15px 0px;
   text-align: end;
-}
+} 
 header nav ul.active {
   display: block;
 }
@@ -82,14 +93,18 @@ header nav ul li a:hover {
 
 main section.home {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 100dvh;
 
   margin-bottom:40px ;
   padding-inline: var(--padding-inline);
+
+  background-image: url(../img/paisagem-g.jpg);
+  
 }
-main .home .home-img {
+/* main .home .home-img {
   margin-block: 20px;
   width: 200px;
   height: 200px;
@@ -98,7 +113,7 @@ main .home .home-img {
   background: url(../img/foto\ perfil.jpg) no-repeat center center;
   background-size: cover;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25);
-}
+} */
 main .home .home-texto {
   text-align: center;
 }
@@ -106,8 +121,12 @@ main section.home p span {
   color: var(--cor-p);
 }
 main section.home h2 {
-  color: rgba(112, 111, 111, 0.456);
+  color: rgba(117, 114, 114, 0.456);
   margin-block: 10px;
+}
+main section.home p {
+  color: var(--cor-brnaco);
+
 }
 main section.home .button-home {
   display: flex;
@@ -165,7 +184,8 @@ main .sobre {
 
   padding-inline: var(--padding-inline);
 }
-main .sobre h2 {
+
+#sub-titulo {
   border-bottom: 4px solid var(--cor-p);
   display: inline-block;
   font-size: 1.2em;
@@ -182,4 +202,8 @@ main .sobre .sobre-texto {
 
 main .sobre img {
    display: none;
+}
+main .sobre .sobre-line {
+  display: flex;
+  flex-direction: row;
 }
